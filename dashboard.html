@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard | SMK Denis Kusuma</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <div class="logo-circle">DK</div>
+    <span>SMK Denis Kusuma</span>
+  </div>
+  <a class="active" href="dashboard.html">Dashboard</a>
+  <a href="students.html">Data Siswa</a>
+  <a href="teachers.html">Data Guru</a>
+  <a onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+  <div class="header">
+    <h1>Sistem Informasi Sekolah</h1>
+    <p>SMK Denis Kusuma</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h2>👨‍🎓 420</h2>
+      <p>Jumlah Siswa</p>
+    </div>
+    <div class="card">
+      <h2>👩‍🏫 32</h2>
+      <p>Jumlah Guru</p>
+    </div>
+    <div class="card">
+      <h2>📅 2025/2026</h2>
+      <p>Tahun Ajaran</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/guard.js"></script>
+</body>
+</html>

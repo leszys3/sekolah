@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Data Siswa | SMK Denis Kusuma</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <div class="logo-circle">DK</div>
+    <span>SMK Denis Kusuma</span>
+  </div>
+  <a href="dashboard.html">Dashboard</a>
+  <a class="active" href="students.html">Data Siswa</a>
+  <a href="teachers.html">Data Guru</a>
+  <a onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+  <h1>Data Siswa</h1>
+
+  <table>
+    <tr>
+      <th>NIS</th>
+      <th>Nama</th>
+      <th>Kelas</th>
+      <th>Jurusan</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>Ahmad</td>
+      <td>XII RPL</td>
+      <td>RPL</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Siti</td>
+      <td>XI TKJ</td>
+      <td>TKJ</td>
+    </tr>
+  </table>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/guard.js"></script>
+</body>
+</html>
